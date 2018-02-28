@@ -26,7 +26,7 @@ class ConnectedForm extends React.Component {
         const { title } = this.state;
         const id = Math.floor(Math.random() * Math.floor(100));
 
-        this.props.addArticle({ title, id });
+        this.props.addArticle({ id, title });
         this.setState({ title: '' });
     }
 
