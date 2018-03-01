@@ -1,6 +1,7 @@
 import React from 'react';
 import List from './List';
 import Form from './Form'
+import UserList from './UserList';
 
 export default function Header(props){
     return(
@@ -12,6 +13,10 @@ export default function Header(props){
             <div>
                 <h3>Add a New Article</h3>
                 <Form />
+            </div>
+            <div>
+                <h4>Users Are:</h4>
+                <UserList />
             </div>
         </main>
     )

@@ -8,10 +8,10 @@ const mapStateToProps = state => {
     };
 };
 
-const ConnectedList = ({ articles }) => (
+const ConnectedList = (props) => (
     <ul>
         {
-            articles.map(item => (
+            props.articles.map(item => (
                 <li key={item.id}>
                     {item.title}
                 </li>
